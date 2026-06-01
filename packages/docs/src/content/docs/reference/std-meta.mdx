@@ -1,0 +1,20 @@
+---
+title: std/meta
+description: Compile-time TARGET constant.
+---
+
+```typescript
+import { TARGET } from "std/meta";
+
+switch (TARGET) {
+  case "bash":
+  case "sh":
+    // shared implementation
+    break;
+  case "ps1":
+    // PowerShell-specific
+    break;
+}
+```
+
+Only the case matching `--target` is emitted. See [switch (TARGET)](/reference/switch-target/).

@@ -1,0 +1,13 @@
+{
+    "name": "@ts2shell/std-types",
+    "version": "0.1.0",
+    "description": "TypeScript declarations for ts2shell std/* modules",
+    "license": "MIT",
+    "types": "./std/index.d.ts",
+    "scripts": {
+        "build": "echo 'No build for std-types'",
+        "clean": "echo 'No clean for std-types'",
+        "lint": "echo 'No lint for std-types'",
+        "test": "echo 'No tests for std-types'"
+    }
+}

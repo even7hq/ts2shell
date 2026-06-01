@@ -1,0 +1,20 @@
+---
+title: Language subset
+description: Supported TypeScript constructs.
+---
+
+## Supported
+
+- `const` / `let`, functions, `if` / `while`, `for…of` on arrays
+- Template strings, string/number literals
+- `std/*` imports and relative `.ts` bundles
+- `switch (TARGET)` for per-target code
+
+## Not supported
+
+- `class`, `async` / `await`, decorators
+- `.map`, `.filter`, `.reduce`
+- npm package imports
+- ES `export` forms (`export default`, `export { … }`)
+
+Use `TS2SHELL###` diagnostics when a construct is rejected.

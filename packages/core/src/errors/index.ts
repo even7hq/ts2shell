@@ -1,0 +1,13 @@
+export { Ts2ShellError } from "./Ts2ShellError";
+export { CliError } from "./CliError";
+export { UnsupportedSyntaxError } from "./UnsupportedSyntaxError";
+export { TargetCapabilityError } from "./TargetCapabilityError";
+export { ModuleResolutionError } from "./ModuleResolutionError";
+export { ConstReassignError } from "./ConstReassignError";
+export { TargetSwitchError } from "./TargetSwitchError";
+export { StdLibraryError } from "./StdLibraryError";
+export { Errors } from "./Errors";
+export { DiagnosticFormatter } from "./DiagnosticFormatter";
+export type { Ts2ShellDiagnostic } from "./DiagnosticFormatter";
+export { spanFromNode, syntheticSpan } from "./spanFromNode";
+export type { SourceSpan, RelatedSpan } from "./SourceSpan";

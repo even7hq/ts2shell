@@ -1,0 +1,16 @@
+---
+title: CLI
+description: ts2shell compile command.
+---
+
+## Usage
+
+```bash
+ts2shell compile <entry.ts> --target bash|sh|ps1|bat [-o output] [--strict-targets]
+```
+
+| Flag | Description |
+|------|-------------|
+| `--target` | Output shell (default `bash`) |
+| `-o` | Output file path |
+| `--strict-targets` | Require `switch (TARGET)` to cover the active target |

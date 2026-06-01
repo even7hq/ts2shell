@@ -1,0 +1,25 @@
+{
+    "name": "ts2shell",
+    "version": "0.1.0",
+    "private": true,
+    "description": "Transpile TypeScript to bash, sh, PowerShell, and batch",
+    "license": "MIT",
+    "workspaces": {
+        "packages": [
+            "packages/*"
+        ]
+    },
+    "scripts": {
+        "build": "yarn workspaces run build",
+        "clean": "yarn workspaces run clean",
+        "lint": "yarn workspaces run lint",
+        "test": "yarn workspaces run test",
+        "docs:build": "yarn workspace @ts2shell/docs build",
+        "docs:dev": "yarn workspace @ts2shell/docs dev",
+        "ts2shell": "yarn workspace @ts2shell/cli ts2shell",
+        "check:no-lsp": "sh scripts/check-no-lsp.sh"
+    },
+    "devDependencies": {
+        "typescript": "^5.4.0"
+    }
+}

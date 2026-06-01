@@ -1,0 +1,17 @@
+---
+title: Quick start
+description: Minimal hello script.
+---
+
+```typescript
+import { echo } from "std/io";
+import { Env } from "std/env";
+
+Env.set("GREETING", "hello");
+echo(Env.get("GREETING"), "world");
+```
+
+```bash
+yarn ts2shell compile hello.ts --target bash -o hello.sh
+bash hello.sh
+```

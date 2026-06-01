@@ -1,0 +1,32 @@
+---
+title: Error codes
+description: TS2SHELL diagnostic catalog.
+---
+
+All compile errors extend `Ts2ShellError` and include:
+
+- Stable code (`TS2SHELL###`)
+- Source location and snippet with caret
+- `help:` lines with concrete fixes
+
+## Ranges
+
+| Range | Category |
+|-------|----------|
+| 001-049 | CLI |
+| 100-149 | Unsupported TypeScript syntax |
+| 200-299 | Target capability |
+| 300-349 | Module resolution |
+| 400-419 | const reassignment |
+| 500-549 | switch(TARGET) |
+
+## Examples
+
+| Code | Meaning |
+|------|---------|
+| TS2SHELL003 | Invalid `--target` |
+| TS2SHELL101 | Unsupported syntax (class, async, …) |
+| TS2SHELL214 | Object literal on unsupported target |
+| TS2SHELL301 | Unknown import |
+| TS2SHELL401 | const reassignment |
+| TS2SHELL510 | Missing case for active target in switch(TARGET) |

@@ -1,0 +1,18 @@
+---
+title: std/env
+description: Environment variable API.
+---
+
+```typescript
+import { Env } from "std/env";
+
+Env.set("DEBUG", "1");
+const value = Env.get("DEBUG");
+```
+
+| Method | bash | ps1 | bat |
+|--------|------|-----|-----|
+| `Env.set` | `export NAME=value` | `$env:NAME = value` | `set NAME=value` |
+| `Env.get` | `${NAME:-}` | `$env:NAME` | `%NAME%` |
+
+Local script variables use normal `const` / `let` without `Env`.

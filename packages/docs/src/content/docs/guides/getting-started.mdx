@@ -1,0 +1,41 @@
+---
+title: Getting started
+description: Install and compile your first ts2shell script.
+---
+
+## Requirements
+
+- Node.js 20+
+- Yarn
+
+## Install
+
+```bash
+git clone <repository-url>
+cd ts2shell
+yarn install
+yarn build
+```
+
+## tsconfig for IDE support
+
+```json
+{
+  "compilerOptions": {
+    "strict": true,
+    "noEmit": true,
+    "paths": {
+      "std/*": ["./node_modules/@ts2shell/std-types/std/*"]
+    }
+  },
+  "include": ["src/**/*.ts"]
+}
+```
+
+## Compile
+
+```bash
+yarn ts2shell compile src/main.ts --target bash -o dist/main.sh
+```
+
+See [CLI reference](/reference/cli/) and [Targets](/reference/targets/).

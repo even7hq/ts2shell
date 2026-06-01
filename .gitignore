@@ -1,0 +1,7 @@
+node_modules/
+dist/
+*.tsbuildinfo
+.yarn/
+.DS_Store
+packages/docs/dist/
+packages/docs/.astro/

@@ -1,0 +1,26 @@
+---
+title: ts2shell
+description: Transpile TypeScript to shell scripts.
+template: splash
+hero:
+  title: ts2shell
+  tagline: Write TypeScript. Run bash, sh, PowerShell, or batch.
+  actions:
+    - text: Getting started
+      link: /guides/getting-started/
+      icon: right-arrow
+---
+
+import { Card, CardGrid } from '@astrojs/starlight/components';
+
+<CardGrid>
+  <Card title="Multi-target" icon="rocket">
+    One `.ts` file, four outputs via `--target`.
+  </Card>
+  <Card title="Seamless TS" icon="document">
+    Standard TypeScript plus `std/*` modules and `paths` for IntelliSense.
+  </Card>
+  <Card title="Clear errors" icon="warning">
+    Every failure has a `TS2SHELL###` code, snippet, and fix hints.
+  </Card>
+</CardGrid>

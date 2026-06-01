@@ -1,0 +1,18 @@
+{
+    "name": "@ts2shell/docs",
+    "version": "0.1.0",
+    "private": true,
+    "license": "MIT",
+    "type": "module",
+    "scripts": {
+        "dev": "astro dev",
+        "build": "astro build",
+        "preview": "astro preview",
+        "lint": "echo 'No lint for docs'",
+        "test": "echo 'No tests for docs'"
+    },
+    "dependencies": {
+        "@astrojs/starlight": "^0.38.2",
+        "astro": "^6.0.0"
+    }
+}

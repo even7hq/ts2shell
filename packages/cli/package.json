@@ -1,0 +1,24 @@
+{
+    "name": "@ts2shell/cli",
+    "version": "0.1.0",
+    "description": "ts2shell command-line interface",
+    "license": "MIT",
+    "type": "module",
+    "bin": {
+        "ts2shell": "./dist/cli.js"
+    },
+    "scripts": {
+        "build": "tsc --build",
+        "clean": "rm -rf dist *.tsbuildinfo",
+        "lint": "tsc --noEmit",
+        "test": "echo 'No tests in cli'",
+        "ts2shell": "node ./dist/cli.js"
+    },
+    "dependencies": {
+        "@ts2shell/core": "0.1.0"
+    },
+    "devDependencies": {
+        "@types/node": "^20.0.0",
+        "typescript": "^5.4.0"
+    }
+}

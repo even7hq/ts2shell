@@ -1,0 +1,16 @@
+---
+title: Targets
+description: Capability matrix per compile target.
+---
+
+| Capability | bash | sh | ps1 | bat |
+|------------|------|-----|-----|-----|
+| Object literals | yes | no | yes | no |
+| Nested arrays | yes | no | yes | no |
+| `.push` | yes | no | yes | no |
+| Spread in `exec` | yes | partial | yes | no |
+| `for…of` | yes | partial | yes | partial |
+| `Env.set` / `Env.get` | yes | partial | yes | yes |
+| `switch (TARGET)` | yes | yes | yes | yes |
+
+When a feature is unavailable, the compiler reports `TargetCapabilityError` (`TS2SHELL2xx`) with the active target and suggested fixes.

@@ -1,0 +1,22 @@
+---
+title: switch (TARGET)
+description: Multiple implementations per output shell.
+---
+
+Import `TARGET` from `std/meta` and use a normal TypeScript `switch`:
+
+```typescript
+import { TARGET } from "std/meta";
+import { exec } from "std/shell";
+
+switch (TARGET) {
+  case "bash":
+    exec("mkdir", "-p", "out");
+    break;
+  case "bat":
+    exec("if", "not", "exist", "out", "mkdir", "out");
+    break;
+}
+```
+
+The compiler keeps only the branch for the active `--target`.

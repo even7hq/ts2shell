@@ -19,7 +19,7 @@ yarn docs:build
 - License: **MIT** for all packages.
 - Do **not** add a Language Server or VS Code extension package. IDE support uses TypeScript `paths` to `@ts2shell/std-types` only.
 - Never use `throw new Error()` for compile failures; use `Ts2ShellError` subclasses with `TS2SHELL###` codes.
-- Add tests for new emission or diagnostics (Vitest in `@ts2shell/core`).
+- Add tests for new emission or diagnostics (Vitest in `packages/core/tests/`).
 
 ## Pull requests
 

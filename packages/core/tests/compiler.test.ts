@@ -26,9 +26,9 @@ describe("Compiler", () => {
         expect(result.extension).toBe(".ps1");
     });
 
-    it("compiles hello.ts to bat", () => {
+    it("compiles a minimal script to bat", () => {
         withTempSource(
-            `import { Env } from "std/env";\nimport { echo } from "std/io";\nEnv.set("DEBUG", "1");\necho("hi");\n`,
+            `import { Env } from "std/env";\nimport { echo } from "std/io";\nEnv.set("X", "1");\necho("ok");\n`,
             (file) => {
                 const result = Compiler.compile(file, { target: "bat" });
 
